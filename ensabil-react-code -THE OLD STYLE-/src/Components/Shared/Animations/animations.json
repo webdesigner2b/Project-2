@@ -1,0 +1,124 @@
+{
+    "inViewSettings": {
+        "triggerOnce": true,
+        "threshold": 0
+    },
+    "animations": [
+        {
+            "animateDown": {
+                "variants": {
+                    "from": {
+                        "opacity": 0,
+                        "y": -100
+                    },
+                    "to": {
+                        "opacity": 1,
+                        "y": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": ""
+            }
+        },
+        {
+            "animateLeft": {
+                "variants": {
+                    "from": {
+                        "x": 100
+                    },
+                    "to": {
+                        "x": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": "animateRight"
+            }
+        },
+        {
+            "animateLeftPos": {
+                "variants": {
+                    "from": {
+                        "left": -100
+                    },
+                    "to": {
+                        "left": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": "animateRightPos"
+            }
+        },
+        {
+            "animateRight": {
+                "variants": {
+                    "from": {
+                        "x": -100
+                    },
+                    "to": {
+                        "x": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": "animateLeft"
+            }
+        },
+        {
+            "animateRightPos": {
+                "variants": {
+                    "from": {
+                        "right": -100
+                    },
+                    "to": {
+                        "right": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": "animateLeftPos"
+            }
+        },
+        {
+            "animateUp": {
+                "variants": {
+                    "from": {
+                        "opacity": 0,
+                        "y": 100
+                    },
+                    "to": {
+                        "opacity": 1,
+                        "y": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": ""
+            }
+        },
+        {
+            "fadeIn": {
+                "variants": {
+                    "from": {
+                        "opacity": 0
+                    },
+                    "to": {
+                        "opacity": 1
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": ""
+            }
+        },
+        {
+            "fadeOut": {
+                "variants": {
+                    "from": {
+                        "opacity": 1
+                    },
+                    "to": {
+                        "opacity": 0
+                    }
+                },
+                "transition": {},
+                "alternativeAnimation": ""
+            }
+        }
+    ]
+}

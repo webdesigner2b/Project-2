@@ -1,0 +1,36 @@
+.PreNavBar {
+    background-color: #4899a3;
+    min-height: 92px;
+    width: 100%;
+    position: relative;
+    display: none;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 576px) {
+        display: flex;
+    }
+    .preNavText {
+        margin: 0;
+        margin-right: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        text-align: justify;
+        color: #ffffff;
+        @media (min-width: 576px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .whiteClose {
+        cursor: pointer;
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+}

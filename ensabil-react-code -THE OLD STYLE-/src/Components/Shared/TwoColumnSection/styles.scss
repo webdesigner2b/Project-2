@@ -1,0 +1,64 @@
+.TwoColumnSection {
+    padding-bottom: 48px;
+    @media (min-width: 992px) {
+        padding-bottom: 173.67px;
+        &.noPaddingBottomDesktop {
+            padding-bottom: 0px;
+        }
+    }
+    .twoColumnSectionContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
+        &.reverse {
+            display: flex;
+            flex-direction: column-reverse;
+            @media (min-width: 992px) {
+                flex-direction: row-reverse;
+            }
+            .textSection {
+                padding-left: 0;
+                padding-right: 0;
+                @media (min-width: 992px) {
+                    padding-right: 47px;
+                }
+                @media (max-width: 576px) {
+                    padding-top: 15px;
+                }
+            }
+        }
+        .imageSection {
+            .twoColumnImage {
+                max-width: 100%;
+            }
+        }
+        .textSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            @media (min-width: 992px) {
+                padding-left: 47px;
+            }
+
+            .greenTitleLarge {
+                margin-bottom: 14px;
+            }
+            .titleLarge {
+                margin-bottom: 14px;
+                @media (min-width: 992px) {
+                    margin-bottom: 27px;
+                }
+            }
+            .descriptionLarge {
+                margin-bottom: 14px;
+                @media (min-width: 992px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

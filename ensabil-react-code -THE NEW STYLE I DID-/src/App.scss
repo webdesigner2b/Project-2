@@ -1,0 +1,272 @@
+
+.layoutContainer {
+    .section {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+
+        @media (min-width: 568px) {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            padding-right: 7.625rem;
+            padding-left: 7.625rem;
+        }
+    }
+    .smallerSection {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+
+        @media (min-width: 568px) {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
+    .mediumSection {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        background: linear-gradient(89.24deg, #75CCCC00, #63c1c133);
+        @media (min-width: 568px) {
+            padding-right: 1.1rem;
+            padding-left: 1.1rem;
+        }
+
+        @media (min-width: 768px) {
+            padding-right: 5.625rem;
+            padding-left: 5.625rem;
+        }
+    }
+    .largeScreenExpander {
+        max-width: 1400px;
+        @media (min-width: 1400px) {
+            max-width: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .greenTitleLarge {
+        font-style: normal;
+        color: #75cccc;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        @media (min-width: 768px) {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 35px;
+        }
+
+        @media (min-width: 992px) {
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 45px;
+        }
+        @media screen and (min-width:320px) and (max-width:768px){
+            display: none;
+        }
+    }
+    .titleLarge {
+        color: #ffff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 105.69%;
+
+        @media (min-width: 768px) {
+            font-weight: 400;
+            font-size: 41px;
+            line-height: 51px;
+        }
+
+        @media (min-width: 992px) {
+            font-weight: 600;
+            font-size: 61px;
+            line-height: 71px;
+        }
+        @media screen and (max-width:768px){
+            color: #75CCCC;
+            margin: 0 2rem;
+
+        }
+    }
+    .descriptionLarge {
+        font-style: normal;
+        color: #ffff;
+        font-style: normal;
+
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 123.19%;
+
+        @media (min-width: 768px) {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 88%;
+        }
+
+        @media (min-width: 992px) {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 123.9%;
+        }
+        @media screen and (min-width:320px) and (max-width:768px){
+            margin: 0 2rem;
+        }
+    }
+    .inSectionGreenTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 75px;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        font-family: 'Roboto';
+        display: none;
+        
+        @media screen and (max-width:768px){
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 18px;
+            color: #62E8E8;
+            display: block;
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+          
+             
+            
+        }
+        
+       
+
+        @media (min-width: 768px) {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 43px;
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 43px;
+            display: none;
+        }
+    }
+
+
+    .inSection{
+        display: none;
+        @media screen and (max-width:768px){
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 105.69%;
+        color: #FFFFFF;
+        margin-left: 2rem;
+        display: block;
+        margin-bottom: -1rem;
+        }
+    }
+
+    
+    
+    
+    
+   
+
+    .inSection2{
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 53px;
+        line-height: 115.19%;
+        text-align: justify;
+        color: #FFFFFF;
+        @media screen and (max-width:768px){
+            display: none;
+        }
+    }
+
+    .noBigScreen{
+        display: none;
+        @media screen and (max-width:768px){
+            display: block;
+            padding-top: 38px;
+            margin: 0;
+            font-style: normal;
+            color: #fafafa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 123.19%;
+            margin-left: 2rem;
+        }
+    }
+
+
+    .inSectionGreenTitleSmaller {
+        margin: 0 4rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;   
+        text-align: center;
+        color: #62E8E8;
+        margin-bottom: 5rem;
+        @media screen and (max-width:768px){
+            display: inline-block;
+            margin-top: 5rem;
+            margin-bottom: -1rem;
+            margin-left: 3rem;
+            font-size: 18px;
+
+        }
+        }
+
+        .inSectionGreenTitleSmaller2{
+    
+            margin: 0 1.5rem;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 40px;   
+            text-align: center;
+            color: #62E8E8;
+            margin-bottom: 5rem;
+        }
+
+    .label {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        font-style: normal;
+
+        @media (min-width: 768px) {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        @media (min-width: 992) {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 33px;
+        }
+        @media screen and (max-width:768px){
+          display: none;
+        }
+    }
+}

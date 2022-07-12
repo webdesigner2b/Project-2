@@ -1,0 +1,206 @@
+
+
+.navBarBtn {
+  background: #48b7b7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  width: 35%;
+  padding: 0.5rem;
+
+  margin-top: 0.5rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.NavigationBar {
+  margin-bottom: 49px;
+  @media (min-width: 992px) {
+    margin-bottom: 108px;
+  }
+  background-color: #00163b !important;
+  position: relative;
+  transition: all ease-in-out 300ms;
+  &.makeSticky {
+    transition: all ease-in-out 300ms;
+    position: fixed;
+    top: 0;
+    z-index: 21;
+    width: 100%;
+    background-color: #061628 !important;
+  }
+  .navbar {
+    padding: 0;
+    padding-bottom: 5px;
+    .navBarContainer {
+      width: unset;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: flex-start;
+
+      @media (max-width: 576px) {
+        padding-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      @media (min-width: 1280px) {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .navbar-brand {
+        padding-left: 20px;
+        @media (min-width: 576px) {
+          padding-left: 0;
+        }
+        @media (min-width: 1200px) {
+          margin-right: 168px;
+        }
+      }
+      .contentGrid {
+        width: unset;
+        padding-top: 0;
+
+        @media (min-width: 576px) {
+          padding-top: 20px;
+        }
+        @media (min-width: 1280px) {
+          width: 100%;
+        }
+        .burgerIcon {
+          cursor: pointer;
+          margin-right: 30px;
+        }
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          @media (min-width: 768px) {
+          }
+
+          @media (min-width: 1280px) {
+            justify-content: center;
+          }
+
+          .nav-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+
+            &.isSelected {
+              .nav-link {
+                font-weight: 700;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60%;
+                transform: translateY(15px);
+                border-bottom: 5px solid #00ffe8;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+              }
+            }
+
+            @media (min-width: 768px) {
+              &:not(:last-of-type) {
+                padding-right: 20px;
+              }
+            }
+
+            @media (min-width: 992px) {
+              justify-content: center;
+              &:not(:last-of-type) {
+                padding-right: 30px;
+              }
+            }
+
+            @media (min-width: 1200px) {
+              &:not(:last-of-type) {
+                padding-right: 45px;
+              }
+            }
+
+            .nav-link {
+              padding: 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 15px;
+              color: #ffffff;
+              &:hover {
+                color: #00ffe8;
+              }
+
+              @media (min-width: 992px) {
+                font-size: 25px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-open {
+  overflow-y: hidden;
+}
+.mobileMenuOpen {
+  width: 100%;
+  height: 100vh;
+  z-index: 22;
+  background-color: #75cccc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  .menuActionTrigger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 27px;
+    cursor: pointer;
+  }
+  .mobileMenuContent {
+    padding-top: 100px;
+    padding-left: 48px;
+    .discoverEnsabill {
+      cursor: pointer;
+      padding-bottom: 53px;
+    }
+
+    .mobileMenuContentLinks {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #00163b;
+      p {
+        cursor: pointer;
+        margin-bottom: 25px;
+        margin-top: 0;
+      }
+    }
+  }
+}
